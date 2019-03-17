@@ -15,7 +15,7 @@ namespace CustomListView.WPF.Renderers
         {
             base.UpdateWidth();
 
-            if (Control.ItemsSource != null)
+            if (Control != null && Control.ItemsSource != null)
             {
                 foreach (var item in Control.ItemsSource)
                 {
